@@ -1,0 +1,16 @@
+[package]
+name = "market"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.0-rc.4"
+fastrand = "2.1.0"
+# vleue_navigator = "0.8.0-rc.3"
+vleue_navigator = { git = "https://github.com/vleue/vleue_navigator.git", rev = "3995a4947a35913b20cfb7936d4cfb8abac5ce42" }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
